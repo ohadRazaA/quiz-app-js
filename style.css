@@ -1,0 +1,108 @@
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 5px 2px 5px 2px;
+}
+
+#type,
+#nested-type {
+    display: none;
+}
+
+#type,
+#nested-type,
+#any-type {
+    cursor: pointer;
+}
+
+#any-type {
+    border: none;
+    background-color: #f0f0f0;
+    padding: 5px 10px 5px 10px;
+    width: auto;
+    display: inline;
+}
+
+#type {
+    background-color: #f0f0f0;
+    width: 200px;
+    height: 215px;
+    padding: 10px;
+}
+
+#nested-type {
+    position: relative;
+    left: 188px;
+    bottom: 20px;
+    background-color: #f0f0f0;
+    width: 100px;
+    padding: 10px;
+}
+
+.items:hover {
+    background-color: #e0e0e0;
+}
+
+#scnd-pg {
+    display: none;
+}
+
+.que {
+    list-style: none;
+}
+
+.opt {
+    background-color: #d5d8d8;
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 30px 20px;
+}
+
+.opt:hover {
+    background-color: #fff;
+}
+.opt2 {
+    background-color: #d5d8d8;
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 30px 20px;
+}
+
+#results {
+    display: none;
+}
+
+.goBackBtn {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30px 20px;
+    background-color: black;
+    color: #fff;
+}
+.checkingBtn {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30px 20px;
+    background-color: black;
+    color: #fff;
+}
+.checkingBtn:hover{
+    background-color: red;
+}
+
+.btns {
+    margin-left: 30px;
+    padding: 5px;
+    border-radius: 30px 20px;
+    background-color: black;
+    color: #fff;
+    width: 85px;
+    cursor: pointer;
+    text-align: center;
+}

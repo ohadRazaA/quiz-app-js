@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div id="main" class="container mt-5">
+        <h1><u>"Quiz Application"</u></h1>
+        <div class="p-2 mt-5 mb-3">
+            <span>Type:</span>
+            <ul>
+                <li id="any-type">Any &nbsp;</li>
+                <li>
+                    <ul id="type">
+                        <li class="items">Any &nbsp; </li>
+                        <li class="items">General Knowledge &nbsp; </li>
+                        <li class="items">Geography &nbsp; </li>
+                        <li class="items">History &nbsp; </li>
+                        <li class="items">Animals &nbsp; </li>
+                        <li id="show-nested-type">Entertainment &nbsp;<i class="fa-solid fa-caret-right"></i>
+                            <ul id="nested-type">
+                                <li class="items">Books &nbsp; </li>
+                                <li class="items">Films &nbsp; </li>
+                                <li class="items">Music &nbsp; </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <button id="start-quiz" class="btn btn-secondary fw-bold btn-md" >Start Quiz</button>
+    </div>
+
+    <div id="scnd-pg" class="container mt-3">
+        <h1 id="quiz-type"></h1>
+        <p style="font-size: 30px;" id="numOfQuestion"></p>
+
+        <ul id="questions"></ul>
+        <ul id="options"></ul>
+        <div style="margin-left: 30px;" id="nxtButton" class="nxtBtn"></div>
+    </div>
+    <div class="container mt-3" id="results"></div>
+
+
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/bf11ed702e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
