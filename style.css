@@ -1,3 +1,6 @@
+*{
+    color: #fff;
+}
 ul {
     list-style: none;
 }
@@ -138,7 +141,7 @@ li {
 }
 
 .start-quiz {
-    color: black;
+    color: #fff;
     border: none;
     border-radius: 5px;
     padding: 5px;
