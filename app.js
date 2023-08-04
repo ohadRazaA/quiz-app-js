@@ -81,6 +81,7 @@ const allQuiz = async (url) => {
             li.textContent = currentIndex + 1 + ". " + questions[currentIndex].question;
             allQuestions.appendChild(li);
             li.appendChild(document.createElement("br"));
+            li.classList.add("question");
 
             //Options
 
@@ -131,7 +132,7 @@ const allQuiz = async (url) => {
             optionLi.appendChild(document.createElement("br"));
             optButtons.classList.add("opt2");
             if (opt === questions[currentIndex].correct_answer) {
-                optButtons.classList.add("bg-success");
+                optButtons.classList.add("opt3");
             }
         });
 
@@ -153,7 +154,7 @@ const allQuiz = async (url) => {
                     optionLi.appendChild(document.createElement("br"));
                     optButtons.classList.add("opt2");
                     if (opt === questions[currentIndex].correct_answer) {
-                        optButtons.classList.add("bg-success");
+                        optButtons.classList.add("opt3");
                     }
                 });
 
@@ -171,7 +172,6 @@ const allQuiz = async (url) => {
 
         nxtBtn.textContent = "Next =>";
         nxtBtn.classList.add("btns");
-        // nxtBtn.removeEventListener("click", checkResults);
         nxtBtn.addEventListener("click", goToNext);
     };
 
@@ -220,7 +220,7 @@ const allQuiz = async (url) => {
 
         let checkingBtn = document.createElement("button");
         checkingBtn.classList.add("checkingBtn");
-        checkingBtn.textContent = "Check Results";
+        checkingBtn.textContent = "Correct Answers";
         checkingBtn.onclick = checkResults;
         results.appendChild(checkingBtn);
     }

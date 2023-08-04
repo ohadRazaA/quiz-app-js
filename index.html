@@ -12,43 +12,46 @@
 
 <body>
 
-    <div id="main" class="container mt-5">
-        <h1><u>"Quiz Application"</u></h1>
-        <div class="p-2 mt-5 mb-3">
-            <span>Type:</span>
-            <ul>
-                <li id="any-type">Any &nbsp;</li>
-                <li>
-                    <ul id="type">
-                        <li class="items">Any &nbsp; </li>
-                        <li class="items">General Knowledge &nbsp; </li>
-                        <li class="items">Geography &nbsp; </li>
-                        <li class="items">History &nbsp; </li>
-                        <li class="items">Animals &nbsp; </li>
-                        <li id="show-nested-type">Entertainment &nbsp;<i class="fa-solid fa-caret-right"></i>
-                            <ul id="nested-type">
-                                <li class="items">Books &nbsp; </li>
-                                <li class="items">Films &nbsp; </li>
-                                <li class="items">Music &nbsp; </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+    <div class="MAIN">
+        <div id="main" class="">
+            <div>
+                <h1 class=""><u>Quiz Application</u></h1>
+            </div>
+            <div class="all-types">
+                <span class="fw-bold">Type:</span>
+                <ul>
+                    <li class="types" id="any-type">Any &nbsp;</li>
+                    <li class="types">
+                        <ul id="type">
+                            <li class="items">Any &nbsp; </li>
+                            <li class="items">General Knowledge &nbsp; </li>
+                            <li class="items">Geography &nbsp; </li>
+                            <li class="items">History &nbsp; </li>
+                            <li class="items">Animals &nbsp; </li>
+                            <li id="show-nested-type">Entertainment &nbsp;<i class="fa-solid fa-caret-right"></i>
+                                <ul id="nested-type">
+                                    <li class="items">Books &nbsp; </li>
+                                    <li class="items">Films &nbsp; </li>
+                                    <li class="items">Music &nbsp; </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <button id="start-quiz" class="start-quiz fw-bold">Start Quiz</button>
         </div>
-        <button id="start-quiz" class="btn btn-secondary fw-bold btn-md" >Start Quiz</button>
+
+        <div id="scnd-pg" class="container mt-3">
+            <h1 id="quiz-type"></h1>
+            <p style="font-size: 30px;" id="numOfQuestion"></p>
+
+            <ul id="questions"></ul>
+            <ul id="options"></ul>
+            <div style="margin-left: 30px;" id="nxtButton" class="nxtBtn"></div>
+        </div>
+        <div class="container mt-3" id="results"></div>
     </div>
-
-    <div id="scnd-pg" class="container mt-3">
-        <h1 id="quiz-type"></h1>
-        <p style="font-size: 30px;" id="numOfQuestion"></p>
-
-        <ul id="questions"></ul>
-        <ul id="options"></ul>
-        <div style="margin-left: 30px;" id="nxtButton" class="nxtBtn"></div>
-    </div>
-    <div class="container mt-3" id="results"></div>
-
 
     <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/bf11ed702e.js" crossorigin="anonymous"></script>

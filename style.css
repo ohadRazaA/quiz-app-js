@@ -19,14 +19,14 @@ li {
 
 #any-type {
     border: none;
-    background-color: #f0f0f0;
+    background-color: rgb(170, 109, 214);
     padding: 5px 10px 5px 10px;
     width: auto;
     display: inline;
 }
 
 #type {
-    background-color: #f0f0f0;
+    background-color: rgb(170, 109, 214);
     width: 200px;
     height: 215px;
     padding: 10px;
@@ -36,13 +36,13 @@ li {
     position: relative;
     left: 188px;
     bottom: 20px;
-    background-color: #f0f0f0;
+    background-color: rgb(170, 109, 214);
     width: 100px;
     padding: 10px;
 }
 
 .items:hover {
-    background-color: #e0e0e0;
+    background-color: rgb(131, 17, 212);
 }
 
 #scnd-pg {
@@ -54,7 +54,8 @@ li {
 }
 
 .opt {
-    background-color: #d5d8d8;
+    background-image: linear-gradient(to right, #0b8793 , #360033);
+    color: #fff;
     width: 40%;
     text-align: center;
     padding: 10px;
@@ -63,15 +64,19 @@ li {
 }
 
 .opt:hover {
-    background-color: #fff;
+    background-image: linear-gradient(to right, #30d8e7 , #6f076a);
 }
+
 .opt2 {
-    background-color: #d5d8d8;
+    background-image: linear-gradient(to right, #0b8793 , #360033);
     width: 40%;
     text-align: center;
     padding: 10px;
     margin: 5px;
     border-radius: 30px 20px;
+}
+.opt3{
+    background-image: linear-gradient(to right, rgb(30, 115, 30) , rgb(30, 115, 30));
 }
 
 #results {
@@ -82,17 +87,19 @@ li {
     cursor: pointer;
     padding: 10px;
     border-radius: 30px 20px;
-    background-color: black;
+    background-image: linear-gradient(to right, #0b8793 , #360033);
     color: #fff;
 }
+
 .checkingBtn {
     cursor: pointer;
     padding: 10px;
     border-radius: 30px 20px;
-    background-color: black;
+    background-image: linear-gradient(to right, #0b8793 , #360033);
     color: #fff;
 }
-.checkingBtn:hover{
+
+.checkingBtn:hover {
     background-color: red;
 }
 
@@ -100,9 +107,52 @@ li {
     margin-left: 30px;
     padding: 5px;
     border-radius: 30px 20px;
-    background-color: black;
+    background-image: linear-gradient(to right, #0b8793 , #360033);
     color: #fff;
     width: 85px;
     cursor: pointer;
     text-align: center;
+}
+
+.types {
+    position: relative;
+    bottom: 22px;
+    left: 10px;
+}
+
+.MAIN {
+    background-image: linear-gradient(#2c3e50, #3498db);
+    height: 49vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#main {
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 30%;
+    padding: 10px;
+    background-image: linear-gradient(#6441A5, #2a0845);
+}
+
+.start-quiz {
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: indigo;
+}
+
+.start-quiz:hover {
+    background-color: rgb(98, 8, 162);
+}
+
+.all-types {
+    margin-top: 35px;
+}
+
+.question {
+    font-size: large;
 }
